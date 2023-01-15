@@ -1,0 +1,43 @@
+body{
+    background-color: #333;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: #222;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    color: whitesmoke;
+}
+.row{
+    display: flex;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    color: rgb(255, 255, 255);
+    margin: 6px;
+    font-family: 'Courier New', Courier, monospace;
+    visibility: hidden;
+}
+
+button{
+    padding: 4px;
+    font-size: 2em;
+    border: 4px solid white;
+    color: white;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    visibility: hidden;
+}

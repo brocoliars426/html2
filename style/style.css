@@ -1,0 +1,359 @@
+body{
+    margin: 0%;
+}
+
+body.dark-mode{
+    background-color: #333;
+    color: aliceblue;
+}
+/* meniu navigatie */
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+    box-shadow: 0px 0px 15px 5px #000000;
+}
+
+/* dark-mode meniu nav */
+.dark-mode .nav-menu{
+    box-shadow: 0px 0px 15px 5px #858484;
+}
+
+.nav-menu li{
+    /* width 33.3% */
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.nav-menu .nav-link{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #111;
+}
+
+ /* dark-mode */
+.dark-mode .nav-menu .nav-link{
+    color: aliceblue;
+}
+
+.nav-menu li:hover .nav-link{
+    transition: all 0.3s ease-in-out;
+    color: rgb(61, 111, 238);
+    letter-spacing: 2px;
+}
+
+#mode-toggle{
+    background-image: url(../img/dark.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.5s linear;
+}
+#mode-toggle:hover{
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+/* sectiune jumbotron */
+
+.jumbotron-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    padding: 0 30pxs;
+    background: linear-gradient(
+        rgba(255,255,255,0.25),
+        rgba(0,0,0,0.45)
+    ),
+    url('https://source.unsplash.com/1600x900/?html');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    text-shadow: 0px 0px 1px black;
+    font-size: 2em;
+}
+@keyframes color-change{
+   0%{
+    filter: hue-rotate(0deg);
+   }
+   50%{
+    filter: hue-rotate(360deg);
+   }
+   100%{
+    filter: hue-rotate(0deg);
+   }
+}
+
+.jumbotron-section .overlay{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.jumbotron-section h1,
+.jumbotron-section p{
+    font-weight: 400;
+    z-index: 1 ;
+}
+/* sectiune text */
+.page-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    max-width: 1000px;
+    margin: 10px auto;
+}
+.page-content .page-content--text{
+    margin-right: 30px;
+    width: 30%;
+}
+.page-content .page-content--img{
+    width: 50%;
+    border-radius: 15px;
+    animation: color-change 1s infinite;
+}
+
+/* SECTIUNE CARDURI */
+.cards-container{
+    padding: 50px 30px;
+
+}
+.cards-container h2{
+    font-size: 40px;
+    text-align: center;
+}
+.cards-list{
+    display: grid;
+    grid-gap: 1rem;
+    list-style-type: none;
+    padding: 0%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.card img{
+    width: 100%;
+    border-radius: 5px;
+}
+.cards-list li{
+    padding: 0;
+    margin: 0;
+}
+.card{
+    padding: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* dark-mode carduri */
+.dark-mode .card{
+    border: 1px solid rgb(198, 198, 198)
+}
+
+.card .card-content button{
+    background-color: whitesmoke;
+    color: #000000;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 40px;
+    transition: all 0.3s linear;
+}
+/* dark-mode la buton */
+
+.dark-mode .card .card-content button{
+    background-color: #333;
+    color: whitesmoke;
+    border-color: whitesmoke;
+}
+.card .card-content button:hover{
+    background-color: #000000;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+/* dark-mode la botton */
+.dark-mode .card .card-content button:hover{
+    background-color: aliceblue;
+    color: #333
+}
+
+/* sectiune footer */
+footer{
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px 30px;
+}
+footer p{
+    text-align: center;
+    margin: 0;
+} 
+
+/* Pagina catalog */
+.catalog {
+    margin: 40px auto;
+    padding: 50px 30px;
+}
+
+.catalog form {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.catalog form input {
+    min-width:50%;
+    line-height: 30px;
+    margin-top: 20px;
+    padding: 5px;
+    
+    border: 1px 1px solid black;
+    border-radius: 15px;
+}
+
+.catalog form button {
+    width: 100px;
+    line-height: 30px;
+    margin-top: 20px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    color: black;
+    cursor: crosshair;
+    transition: all 0.5s linear;
+}
+
+.catalog form button:hover {
+    background-color: black;
+    color: whitesmoke;
+    border:1px solid whitesmoke
+}
+
+/* Catalog Dark Mode */
+.dark-mode .catalog form button {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.dark-mode .catalog form button:hover {
+    background-color: whitesmoke;
+    color: black;
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 600px){
+    .jumbotron-section h1{
+        margin: 5px 30px !important;
+        font-size: 1.2em;
+    }
+    .jumbotron-section p{
+        font-size: 0.8em;
+        margin: 0 30px;
+    }
+    .page-content{
+        display: block;
+    }
+    .page-content .page-content--img ,
+    .page-content .page-content--text{
+        width: 100%;
+    }
+    .nav-menu{
+        width: 80%;
+        box-shadow: none;
+    }
+}
+
+/* pagina contact */
+iframe{
+    width: 100%;
+    height: 500px;
+    margin: 20px auto;
+}
+
+.container-contact{
+    margin: 50px auto;
+}
+
+.container-contact h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact-box{
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.contact-box input, 
+.contact-box textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-box button{
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: whitesmoke;
+    color: #333;
+    cursor: pointer;
+}
+
+.contact-box button:hover{
+    border-color: white;
+    background-color: #333;
+    color: whitesmoke;
+    transition: all 0.5s;
+}
+
+/* dark-mode buton */
+
+.dark-mode .contact-box button{
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    background-color: #333;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.dark-mode .contact-box button:hover{
+    border-color: rgb(0, 0, 0);
+    background-color: whitesmoke;
+    color: #333;
+    transition: all 0.5s;
+}
+
+@media only screen and (min-width: 600px) {
+    /* .cards-list{
+        grid-template-columns: 1fr 1fr;
+    } */
+}
+@media only screen and (min-width: 900px) {
+    .cards-list{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

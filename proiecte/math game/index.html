@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Math Game</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="style.css">
+       
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <div id="game">
+            <div class="dificulty">
+                <button onclick="newGame(10)">Easy</button>
+                <button onclick="newGame(100)">Medium</button>
+                <button onclick="newGame(1000)">Hard</button>
+            </div>
+
+            <div class="canvas">
+                <p>
+                    Score: <span id="score"></span>
+                </p>
+                <p id="problema"> </p>
+                <input type="number" id="rezultat" placeholder="Result">
+            </div>
+        </div>
+    </body>
+</html>

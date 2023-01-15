@@ -1,0 +1,33 @@
+{
+    "proiecte":
+     [
+        {
+            "nume": "x & o",
+            "descriere": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione assumenda, voluptatum, vero doloribus sunt saepe dignissimos mollitia aliquid minus alias sapiente. Quibusdam reprehenderit asperiores, explicabo at blanditiis a nihil neque.",
+            "limbajeDeProgramare": ["HTML", "JavaScript", "CSS"],
+            "imagine":"img/X&0.png",
+            "link": "proiecte/x & o/index.html"
+        },
+        {
+            "nume": "math game",
+            "descriere": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione assumenda, voluptatum, vero doloribus sunt saepe dignissimos mollitia aliquid minus alias sapiente. Quibusdam reprehenderit asperiores, explicabo at blanditiis a nihil neque.",
+            "limbajeDeProgramare": ["HTML", "JavaScript", "CSS"],
+            "imagine":"img/math-game.png",
+            "link": "proiecte/math game/index.html"
+        },
+        {
+            "nume": "om de zapada",
+            "descriere": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione assumenda, voluptatum, vero doloribus sunt saepe dignissimos mollitia aliquid minus alias sapiente. Quibusdam reprehenderit asperiores, explicabo at blanditiis a nihil neque.",
+            "limbajeDeProgramare": ["HTML", "JavaScript", "CSS"],
+            "imagine":"img/om-de-zapada.png",
+            "link": "proiecte/om de zapada/index.html"
+        },
+        {
+            "nume": "memory game",
+            "descriere": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione assumenda, voluptatum, vero doloribus sunt saepe dignissimos mollitia aliquid minus alias sapiente. Quibusdam reprehenderit asperiores, explicabo at blanditiis a nihil neque.",
+            "limbajeDeProgramare": ["HTML", "JavaScript", "CSS"],
+            "imagine":"img/memory-game.png",
+            "link": "proiecte/memory game/index.html"
+        }
+    ]
+}
